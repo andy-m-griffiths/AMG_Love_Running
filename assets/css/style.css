@@ -1,0 +1,21 @@
+/* Wildcard to override default styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: lightgray;
+}
+
+/* Main Content */
+main {
+    background-color: lightcoral;
+}
+
+/* Footer */
+footer {
+    background-color: lightseagreen;
+}
