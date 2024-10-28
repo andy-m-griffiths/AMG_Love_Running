@@ -5,6 +5,16 @@
     box-sizing: border-box;
 }
 
+/* Ganeral Styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic Project Styles */
+    color: #3a3a3a;
+}
+
+
 /* Header */
 header {
     background-color: lightgray;
@@ -13,6 +23,8 @@ header {
 /* Main Content */
 main {
     background-color: lightcoral;
+    /* Main element to take up excess space, pushing footer to the bottom */
+    flex: 1 0 auto;
 }
 
 /* Footer */
