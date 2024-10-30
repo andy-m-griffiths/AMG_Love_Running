@@ -1,27 +1,26 @@
 /* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
-/* Wildcard to override default styles */
+/* Asterisk wildcard selector to override default styles added by the browser */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* Ganeral Styles */
+/* General styles */
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* Generic Project Styles */
+    /* Generic project styles */
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
 }
 
-
 /* Header */
 header {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
@@ -35,6 +34,13 @@ header {
 header a {
     text-decoration: none;
     color: inherit;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
 }
 
 #menu {
@@ -54,7 +60,7 @@ header a {
 /* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
-    background-color: #fff;
+    background-color: #ffffff;
     width: 100%;
     left: 0;
     padding: 0 1rem;
@@ -68,27 +74,26 @@ nav {
     display: block;
 }
 
-.nav-toggle-label {
-    font-size: 2rem;
-}
-
 #nav-toggle {
     display: none;
 }
 
-h1 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
+.nav-toggle-label {
+    font-size: 2rem;
 }
 
-/* Main Content */
+/* Main content */
 main {
-    background-color: lightcoral;
-    /* Main element to take up excess space, pushing footer to the bottom */
+    /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
+}
+
+/* Hero section */
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url("../images/hero-image.webp") no-repeat center center/cover;
 }
 
 /* Footer */
@@ -106,7 +111,7 @@ main {
     color: #3a3a3a;
 }
 
-/* Media query: tablets and larger (768px and above) */
+/* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
     /* Header */
     nav {
@@ -116,9 +121,9 @@ main {
         width: fit-content;
         padding-right: 1rem;
     }
-    
+
     #menu {
-        display:flex;
+        display: flex;
     }
 
     #menu > li {
@@ -137,15 +142,14 @@ main {
 
     /* Main content */
     main {
-        /* push main content down to accomodate larger header */
+        /* Push main content down to accommodate larger header */
         margin-top: 79px;
     }
 }
 
-/* Media query: larger devices (992px and above) */
+/* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-    #menu a:hover {
-        /* text-decoration: underline; */
+    #menu a:hover{
         border-bottom: 1px solid #3a3a3a;
     }
 }
