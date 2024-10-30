@@ -157,6 +157,14 @@ main {
     justify-content: center;
 }
 
+/* Meetup Times section */
+#times {
+    background: url('../images/dublin-city.webp') no-repeat center/cover;
+    /* Handles responsivity without the need for a media query */
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
@@ -172,6 +180,7 @@ main {
     color: #3a3a3a;
 }
 
+/* ------------------------------------------------------------------------------------------------------ */
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
     /* Header */
@@ -232,6 +241,7 @@ main {
 
 }
 
+/* ------------------------------------------------------------------------------------------------------ */
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     #menu a:hover{
@@ -239,6 +249,7 @@ main {
     }
 }
 
+/* ------------------------------------------------------------------------------------------------------ */
 /* Very large devices (desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
     /* Reasons section */
