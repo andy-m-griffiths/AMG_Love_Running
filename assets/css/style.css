@@ -95,9 +95,17 @@ main {
 
 /* Hero section */
 #hero {
-    height: 600px;
+    height: 700px;
     width: 100%;
-    background: url("../images/hero-image.webp") no-repeat center center/cover;
+    background: url("../images/sherise-van-dyk-nS3HSEBrcik-unsplash.jpg") no-repeat center top/cover;
+    position: relative;
+}
+
+/* Signup section */
+#signup {
+    height: 700px;
+    width: 100%;
+    background: url("../images/noah-silliman-4KWeFO13MFM-unsplash.jpg") no-repeat center center/cover;
     position: relative;
 }
 
